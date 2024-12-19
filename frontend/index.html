@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Appointment Booking</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Book Your Appointment</h1>
+    <div id="slot-container">
+      <h3>Select a Date</h3>
+      <input type="date" id="date-picker" class="date-picker">
+      <div id="available-slots">
+        <!-- Slots will be dynamically populated here -->
+      </div>
+      <div id="booking-form" style="display: none;">
+        <h3>Fill Your Details</h3>
+        <input type="text" id="name" placeholder="Name" required class="form-input">
+        <span id="name-error" class="error-message"></span>
+        <input type="text" id="phone" placeholder="Phone Number" required class="form-input">
+        <span id="phone-error" class="error-message"></span>
+        <button onclick="bookAppointment()" class="primary-button">Book Appointment</button>
+      </div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,122 @@
+/* General Styles */
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #f9f9f9;
+  color: #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  text-align: center;
+}
+
+.container {
+  width: 100%;
+  max-width: 400px;
+  padding: 20px;
+  background: #fff;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  color: #0056D6;
+  margin-bottom: 20px;
+}
+
+#slot-container {
+  margin: 0 auto;
+}
+
+h3 {
+  color: #444;
+  margin-bottom: 10px;
+}
+
+.date-picker {
+  padding: 10px;
+  width: 90%;
+  margin-bottom: 20px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+/* Available Slots */
+#available-slots {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 10px;
+  justify-content: center;
+}
+
+#available-slots button {
+  padding: 10px 15px;
+  border: 1px solid #0056D6;
+  border-radius: 5px;
+  background-color: #f0f8ff;
+  color: #0056D6;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+#available-slots button:hover {
+  background-color: #0056D6;
+  color: #fff;
+}
+
+/* Booking Form */
+#booking-form {
+  margin-top: 20px;
+  text-align: left;
+}
+
+#booking-form h3 {
+  margin-bottom: 15px;
+  color: #0056D6;
+}
+
+.form-input {
+  width: 90%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+/* Primary Button */
+.primary-button {
+  width: 100%;
+  padding: 10px;
+  background-color: #0056D6;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.primary-button:hover {
+  background-color: #003d99;
+}
+
+.error-message{
+    color: red;
+    margin-bottom:12px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .container {
+    padding: 15px;
+  }
+
+  #available-slots button {
+    font-size: 14px;
+    padding: 8px 12px;
+  }
+}
